@@ -11,7 +11,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>Jspxcms管理平台 - Powered by Jspxcms</title>
+<title>广元阳光舞校平台</title>
 <jsp:include page="/WEB-INF/views/commons/head.jsp"></jsp:include>
 <style type="text/css">
 html,body{height:100%;margin:0;padding:0;overflow:auto;}
@@ -24,7 +24,7 @@ html,body{height:100%;margin:0;padding:0;overflow:auto;}
 #welcome{float:right;height:100%;line-height:46px;padding:0 10px 0 20px;background:url('${ctx}/static/back/images/user.png') no-repeat 0 center;}
 #sites{float:right;padding:12px 10px 0 0;}
 
-#nav-menu{height:30px;padding-left:15px;overflow:hidden;background:url("${ctx}/static/back/images/top_menu_bg.png");}
+#nav-menu{height:30px;padding-left:15px;overflow:hidden;banckground:url("${ctx}/static/back/images/top_menu_bg.png");}
 .nav-menu-li{float:left;height:30px;line-height:30px;}
 .nav-menu-a{float:left;padding:0 20px;font-weight:bold;color:#fff;font-size:14px;}
 .nav-menu-a:link,.nav-menu-a:visited,.nav-menu-a:hover,.nav-menu-a:active{text-decoration:none;outline-style:none;}
