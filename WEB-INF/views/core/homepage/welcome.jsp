@@ -25,11 +25,6 @@ a.latest-version{color:red;}
  -->
 <h1 class="bar">您的资料</h1>
 <p class="line">
-	<label class="label">当前版本</label>
-	<span class="content">v${site.version} <a href="http://www.jspxcms.com" target="_blank" class="latest-version">查看最新版</a></span>
-	<div class="clear"></div>
-</p>
-<p class="line">
 	<label class="label">用户名</label>
 	<span class="content">${user.username}</span>
 	<div class="clear"></div>
