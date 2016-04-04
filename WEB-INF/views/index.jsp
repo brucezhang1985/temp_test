@@ -18,7 +18,7 @@ html,body{height:100%;margin:0;padding:0;overflow:auto;}
 
 #top{height:76px;width:100%;top:0;left:0;position:absolute;}
 #header{height:46px;background:url('${ctx}/static/back/images/bg.png');padding:0 5px;}
-#logo{float:left;height:100%;width:50%;background:url('${ctx}/static/back/images/admin_logo.png') no-repeat 5px center;}
+#logo{float:left;height:100%;width:50%}
 #logout{float:right;width:50px;height:100%;display:block;background:url('${ctx}/static/back/images/logout.png') no-repeat center center;}
 #homepage{float:right;width:50px;height:100%;display:block;background:url('${ctx}/static/back/images/home.png') no-repeat center center;}
 #welcome{float:right;height:100%;line-height:46px;padding:0 10px 0 20px;background:url('${ctx}/static/back/images/user.png') no-repeat 0 center;}
