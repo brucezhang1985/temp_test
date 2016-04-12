@@ -153,6 +153,9 @@ input,select,button{
 	overflow:hidden;
 	margin-top:5px;
 }
+.height_header{
+	height:160px;
+}
 .header .title{
 	float:left;
 	padding-left:10px;
