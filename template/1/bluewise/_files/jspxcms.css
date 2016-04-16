@@ -39,7 +39,7 @@ input,select,button{
 	margin:0px auto;
 }
 .w960{
-	width:960px;
+	width:1210px;
 	/*position:relative;*/
 }
 .mt1{/* ( margin-top * 1 ) */
@@ -110,7 +110,7 @@ input,select,button{
 /*---------- frame : header ---------*/
 .header{
 	width:100%;
-	width:960px;
+	width:1210px;
 	margin:auto;
 	overflow:hidden;
 }
@@ -214,11 +214,11 @@ input,select,button{
 }
 /* --------- 导航 ----------------*/
 .w963 {
-	width:960px;
+	width:1210px;
 }
 #navMenu {
 	background:url(images/bg-menu.jpg) repeat-x;
-	width:960px;
+	width:1210px;
 	overflow:hidden;
 	height: 28px;
 	padding:8px 0 0 15px;
@@ -557,7 +557,7 @@ input,select,button{
 	background-color:#eaf2fa;
 }
 
-div#Container { margin: 0 auto; width: 960px; position: relative; background-color: #fff; }
+div#Container { margin: 0 auto; width: 1210px; position: relative; background-color: #fff; }
 .iconCreate { background: url(images/bg_CssSprite.gif) no-repeat 0px -360px; padding-left: 20px; }
 .Bold { font-weight: bold; }
 .Hidden { display: none; }
