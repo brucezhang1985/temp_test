@@ -140,41 +140,41 @@
  <!-- /pleft -->
  <div class="pright"> 
       <!-- /notice -->
- 	<div class="interaction">
-   <dl class="tbox">
-    <dt><strong><a href="${ctx}/guestbook.jspx">网友留言</a></strong><span class="more"><a href="${ctx}/guestbook.jspx"><img src="_files/images/more.gif"></a></span></dt>
-    <dd>
-      <ul>
-      	[@GuestbookList limit=3;list]
-        [#list list as guest]
-        <li>
-          <p><span>${guest.creator.username!}</span>&nbsp;${guest.creationDate?string('yyyy-MM-dd hh:mm:ss')}&nbsp;说:</p>
-          <p>${guest.text!}</p>
-        </li>
-        [/#list]
-        [/@GuestbookList]
-      </ul>
-    </dd>
-   </dl>
-  </div>     
-      
- 	<div class="interaction">
-   <dl class="tbox">
-    <dt><strong><a href="#">网友评论</a></strong></dt>
-    <dd>
-      <ul>
-   		 	[@CommentList limit=2;list]
-				[#list list as comment]
-        <li>
-          <p><span>${comment.creator.username}</span>&nbsp;${comment.creationDate?string('yyyy-MM-dd hh:mm:ss')}&nbsp;说:</p>
-          <p>${comment.text!}</p>
-        </li>
-        [/#list]
-        [/@CommentList]
-      </ul>
-    </dd>
-   </dl>
-  </div>     
+ 	<!--<div class="interaction">-->
+   <!--<dl class="tbox">-->
+    <!--<dt><strong><a href="${ctx}/guestbook.jspx">网友留言</a></strong><span class="more"><a href="${ctx}/guestbook.jspx"><img src="_files/images/more.gif"></a></span></dt>-->
+    <!--<dd>-->
+      <!--<ul>-->
+      	<!--[@GuestbookList limit=3;list]-->
+        <!--[#list list as guest]-->
+        <!--<li>-->
+          <!--<p><span>${guest.creator.username!}</span>&nbsp;${guest.creationDate?string('yyyy-MM-dd hh:mm:ss')}&nbsp;说:</p>-->
+          <!--<p>${guest.text!}</p>-->
+        <!--</li>-->
+        <!--[/#list]-->
+        <!--[/@GuestbookList]-->
+      <!--</ul>-->
+    <!--</dd>-->
+   <!--</dl>-->
+  <!--</div>     -->
+      <!---->
+ 	<!--<div class="interaction">-->
+   <!--<dl class="tbox">-->
+    <!--<dt><strong><a href="#">网友评论</a></strong></dt>-->
+    <!--<dd>-->
+      <!--<ul>-->
+   		 	<!--[@CommentList limit=2;list]-->
+				<!--[#list list as comment]-->
+        <!--<li>-->
+          <!--<p><span>${comment.creator.username}</span>&nbsp;${comment.creationDate?string('yyyy-MM-dd hh:mm:ss')}&nbsp;说:</p>-->
+          <!--<p>${comment.text!}</p>-->
+        <!--</li>-->
+        <!--[/#list]-->
+        <!--[/@CommentList]-->
+      <!--</ul>-->
+    <!--</dd>-->
+   <!--</dl>-->
+  <!--</div>     -->
      
   <div class="commend mt1">
    <dl class="tbox light">
