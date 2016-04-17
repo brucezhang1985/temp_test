@@ -256,21 +256,24 @@ input, select, button {
 }
 
 #navMenu ul li {
-    border-right:1px solid #666;
+    height: 36px;
+    width: 121px;
     font: 17px/1.5 "Microsoft YaHei", "微软雅黑", "Microsoft JhengHei", "宋体";
     float: left;
-    height: 36px;
     text-align: center;
+    background: url(http://www.12306.cn/mormhweb/images/nav_line.gif) no-repeat right;
+}
+
+#navMenu ul li:last-child{
+    background: none;
 }
 
 #navMenu ul li a {
     vertical-align: middle;
-    width: 120px;
+    width: 119px;
     color: #FFF;
     height: 20px;
-    text-decoration: none;
     display: inline-block;
-    position: relative;
 }
 
 #navMenu ul li a:hover {
