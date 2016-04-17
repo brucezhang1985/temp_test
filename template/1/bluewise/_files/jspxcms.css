@@ -252,13 +252,13 @@ input, select, button {
     background: url(images/bg-menu.jpg) repeat-x;
     width: 1210px;
     overflow: hidden;
-    height: 28px;
+    height: 40px;
 }
 
 #navMenu ul li {
     font: 17px/1.5 "Microsoft YaHei", "微软雅黑", "Microsoft JhengHei", "宋体";
     float: left;
-    height: 28px;
+    height: 40px;
     text-align: center;
 }
 
@@ -266,7 +266,7 @@ input, select, button {
     vertical-align: middle;
     width: 121px;
     color: #FFF;
-    height: 28px;
+    height: 20px;
     text-decoration: none;
     display: inline-block;
     position: relative;
@@ -277,7 +277,7 @@ input, select, button {
     text-decoration: none;
     display: inline-block;
     position: relative;
-    height: 28px;
+    height: 36px;
 }
 
 
