@@ -28,9 +28,9 @@
     <div id="navMenu">
     	<ul>
         [@NodeList;list]
-        <li><a href='${ctx}/'><b><span>首页</span></b></a></li>  
+        <li><a href='${ctx}/'><span>首页</span></a></li>  
 				[#list list as node]
- 		 		<li><a href="${node.url}"><b><span>${node.name}</span></b></a></li>
+ 		 		<li><a href="${node.url}"><span>${node.name}</span></a></li>
 				[/#list]
 				[/@NodeList]    	
     	</ul>
