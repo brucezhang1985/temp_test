@@ -256,9 +256,10 @@ input, select, button {
 }
 
 #navMenu ul li {
+    border-right:1px solid #666;
     font: 17px/1.5 "Microsoft YaHei", "微软雅黑", "Microsoft JhengHei", "宋体";
     float: left;
-    height: 40px;
+    height: 36px;
     text-align: center;
 }
 
