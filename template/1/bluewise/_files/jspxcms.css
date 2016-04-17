@@ -272,15 +272,7 @@ input, select, button {
     position: relative;
 }
 
-#navMenu ul li a.hover {
-    color: #DEFF01;
-    height: 22px;
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-}
-
-#navMenu ul li a.hover, #navMenu ul li a:hover, #navMenu ul li a::-moz-selection{
+#navMenu ul li a:hover {
     background: url("images/menuhover.png");
     text-decoration: none;
     display: inline-block;
