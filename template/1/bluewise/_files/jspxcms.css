@@ -252,20 +252,21 @@ input, select, button {
     background: url(images/bg-menu.jpg) repeat-x;
     width: 1210px;
     overflow: hidden;
-    height: 22px;
+    height: 28px;
 }
 
 #navMenu ul li {
     font: 14px/1.5 "Microsoft YaHei", "微软雅黑", "Microsoft JhengHei", "宋体";
     float: left;
-    height: 22px;
+    height: 28px;
     text-align: center;
 }
 
 #navMenu ul li a {
+    vertical-align: middle;
     width: 121px;
     color: #FFF;
-    height: 22px;
+    height: 28px;
     text-decoration: none;
     display: inline-block;
     position: relative;
@@ -279,40 +280,12 @@ input, select, button {
     position: relative;
 }
 
-#navMenu ul li span {
-    cursor: pointer;
-    display: inline-block;
-    height: 22px;
-    margin: 0 0 0 5px;
-    padding: 0 5px 0 0;
-    text-align: center;
-    font-weight: bold;
-    color: #ebf5e9;
-}
-
-#navMenu ul li.hover {
-    padding-top: 0;
-}
-
-#navMenu ul li.hover a {
-    display: inline-block;
-    position: relative;
-}
-
-#navMenu ul li.hover span {
-    cursor: pointer;
-    display: inline-block;
-    height: 22px;
-    margin: 0 0 0 5px;
-    padding: 0 5px 0 0;
-    text-align: center;
-}
-
 #navMenu ul li a.hover, #navMenu ul li a:hover, #navMenu ul li a::-moz-selection{
     background: url("images/menuhover.png");
     text-decoration: none;
     display: inline-block;
     position: relative;
+    height: 28px;
 }
 
 
@@ -320,6 +293,7 @@ input, select, button {
 #navMenu ul li a:active span, #navMenu ul li a:hover span {
     color: #DEFF01;
 }
+
 
 /*------ //搜索框 ---------*/
 .search-keyword {
