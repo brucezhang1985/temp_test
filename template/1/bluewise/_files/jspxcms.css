@@ -308,7 +308,7 @@ input, select, button {
     text-align: center;
 }
 
-#navMenu ul li a.hover, #navMenu ul li a:hover {
+#navMenu ul li a.hover, #navMenu ul li a:hover, #navMenu ul li a:visited, #navMenu ul li a.visited {
     background: url("images/menuhover.png");
     text-decoration: none;
     display: inline-block;
