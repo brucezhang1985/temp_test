@@ -308,14 +308,14 @@ input, select, button {
     text-align: center;
 }
 
-#navMenu ul li a.hover, #navMenu ul li a:hover, #navMenu ul li a:visited, #navMenu ul li a:active, #navMenu ul li a:link{
+#navMenu ul li a.hover, #navMenu ul li a:hover{
     background: url("images/menuhover.png");
     text-decoration: none;
     display: inline-block;
     position: relative;
 }
 
-#navMenu ul li a.hover span, #navMenu ul li a:hover span {
+#navMenu ul li a:active span, #navMenu ul li a:hover span {
     color: #DEFF01;
 }
 
