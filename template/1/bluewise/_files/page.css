@@ -1,5 +1,5 @@
 .pleft{
-	width:712px;
+	width:962px;
 	float:left;
 	overflow:hidden;
 }
@@ -95,7 +95,7 @@
 	overflow:hidden;
 }
 .index .picnews{
-	width:712px;
+	width:962px;
 	float:left;
 	clear:both;
 	overflow:hidden;
@@ -104,14 +104,14 @@
 	_margin-top:8px;
 }
 .listbox{
-	width:720px;
+	width:970px;
 	margin-top:8px;
 	overflow:hidden;
 	float:left;
 	clear:both;
 }
 .index .listbox dl{
-	width:352px;
+	width:477px;
 	margin-right:8px;
 	margin-bottom:6px;
 	float:left;
