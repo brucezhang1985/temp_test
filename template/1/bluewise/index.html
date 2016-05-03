@@ -35,7 +35,7 @@
         .one_box {
             border: 1px solid #e0e0e0;
             float: left;
-            height: 348px;
+            height: 363px;
             padding: 0 10px;
             width: 825px;
         }
@@ -85,13 +85,13 @@
                 [@InfoList attr='bignews' limit=1;list]
                 [#list list as info]
                 <h2><a href="${info.url}">${info.title}</a></h2>
-                <p style="height:55px;font-size:12pt">${substring(info.description,85,'...')}<a href="${info.url}">[查看全文]</a>
+                <p style="height:40px;font-size:12pt">${substring(info.description,85,'...')}<a href="${info.url}">[查看全文]</a>
                 </p>
                 [/#list]
                 [/@InfoList]
                 <!-- /onenews -->
                 <div class="d1">
-                    [@InfoList attr='bignews' offset=1 limit=7;list]
+                    [@InfoList attr='bignews' offset=1 limit=8;list]
                     [#list list as info]
                     <div class='d1arc'><a href="${info.url}">${substring(info.title,23,'...')}</a> <span
                             style="float:right;">${info.publishDate?string('yyyy-MM-dd')}</span></div>
