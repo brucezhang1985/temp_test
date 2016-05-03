@@ -11,9 +11,10 @@
 }
 /*---------- index ---------*/
 .index .bignews{
-	width:424px;
+	width:830px;
 	overflow:hidden;
-	float:right;
+	float:left;
+	margin-top: 15px;
 }
 .index .bignews a{
 	color:#555;
@@ -21,10 +22,12 @@
 .index .bignews .onenews{
 	margin-top:8px;
 	padding:7px 6px;
-	border:1px #DADADA solid;
+	/*border:1px #DADADA solid;*/
+	width:380px;
+	float:right;
 }
 .index .bignews .onenews h2{
-	border-bottom:1px dashed #DADADA;
+	border-bottom:1px dashed #DADADB;
 	margin-bottom:5px;
 	text-align:center;
 	display:block;
@@ -44,6 +47,8 @@
 	width:424px;
 	font-size:0px;
 	color:#fff;
+	float:left;
+	width:424px;
 }
 
 .index .bignews div.d1{
@@ -57,7 +62,7 @@
 .index .bignews div.d1arc{
 	margin-right:12px;
 	_margin-right:6px;
-	width:190px;
+	width:373px;
 
 	float:left;
 	height:24px;
@@ -80,10 +85,11 @@
 	color:red;
 }
 .index .notice{
-	width:278px;
-	border:1px solid #DADADA;
-	height:140px;
+	width:349px;
+	/*border:1px solid #DADADA;*/
+	height:280px;
 	margin-bottom:8px;
+	margin-left:10px;
 	overflow:hidden;
 	float:left;
 }
@@ -95,13 +101,13 @@
 	overflow:hidden;
 }
 .index .picnews{
-	width:962px;
+	width:847px;
 	float:left;
 	clear:both;
 	overflow:hidden;
-	margin-top:9px;
-	*margin-top:12px;
-	_margin-top:8px;
+	/*margin-top:9px;*/
+	/**margin-top:12px;*/
+	/*_margin-top:8px;*/
 }
 .listbox{
 	width:970px;
@@ -124,6 +130,12 @@
 }
 .index .commend dl dd{
 	padding-top:0px;
+}
+
+.index .hot{
+	float: left;
+	width:353px ;
+	margin-left:10px;
 }
 .index .hot dl dd{
 	padding-top:0px;

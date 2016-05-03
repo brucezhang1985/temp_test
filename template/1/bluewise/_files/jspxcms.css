@@ -935,7 +935,7 @@ hr.Line1 {
 }
 
 .votetitle {
-    margin: 10px 0px;
+    margin: 9px 0px;
     background: url(images/vote.png) no-repeat;
     padding-left: 25px;
 }
@@ -1239,17 +1239,17 @@ label.error {
 }
 
 .infiniteCarousel {
-    width: 700px;
+    width: 845px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
 }
 
 .infiniteCarousel .wrapper {
-    width: 640px;
+    width: 800px;
     overflow: auto;
     height: 170px;
-    margin: 0 30px;
+    margin: 0 24px;
     top: 0;
 }
 
