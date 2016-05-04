@@ -1,12 +1,13 @@
 .pleft{
-	width:962px;
+	width:848px;
 	float:left;
 	overflow:hidden;
 }
 .pright{
 	margin-bottom:4px;
-	width:240px;
-	float:right;
+	margin-left:9px;
+	width:353px;
+	float:left;
 	overflow:hidden;
 }
 /*---------- index ---------*/
@@ -111,13 +112,13 @@
 }
 .listbox{
 	width:970px;
-	margin-top:8px;
+	/*margin-top:8px;*/
 	overflow:hidden;
 	float:left;
 	clear:both;
 }
 .index .listbox dl{
-	width:477px;
+	width:419.5px;
 	margin-right:8px;
 	margin-bottom:6px;
 	float:left;

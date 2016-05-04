@@ -220,56 +220,7 @@
 <div class="w960 center clear mt1">
     <!--焦点图宽为424，高为290-->
     <div class="pleft">
-        <div class="bignews">
-            <div class="flashnews">
-                <div name='slideshowHolder'>
-                    [@InfoList attr='focus';list]
-                    [#list list as info]
-                    <img src='${info.attrImageUrl}' alt='${info.title}'/>
-                    <a href='${info.url}' target="_blank"></a>
-                    [/#list]
-                    [/@InfoList]
-                </div>
-            </div>
-            <!--头条-->
-            <div class="onenews">
-                [@InfoList attr='bignews' limit=1;list]
-                [#list list as info]
-                <h2><a href="${info.url}">${info.title}</a></h2>
-                <p>${substring(info.description,85,'...')}<a href="${info.url}">[查看全文]</a></p>
-                [/#list]
-                [/@InfoList]
-                <!-- /onenews -->
-                <div class="d1">
-                    [@InfoList attr='bignews' offset=1 limit=4;list]
-                    [#list list as info]
-                    <div class='d1arc'><a href="${info.url}">${substring(info.title,17,'...')}</a></div>
-                    [/#list]
-                    [/@InfoList]
-                </div>
-            </div>
-            <!--/头条-->
-        </div>
 
-
-        <!-- /latestnews -->
-        <div class='latestnews'>
-            <dl class="tbox" style="border:none;">
-                <dt class='light'><strong>最新文章</strong></dt>
-                <dd class='light'>
-                    <ul class="d4">
-                        <!--最新文档-->
-                        [@InfoList limit=10 isHidden=false;list]
-                        [#list list as info]
-                        <li><span> ${info.publishDate?string('MM-dd')}</span><a href="${info.url}" target="_blank">${substring(info.title,15,'...')}</a>
-                        </li>
-                        [/#list]
-                        [/@InfoList]
-                        <!--//最新文档-->
-                    </ul>
-                </dd>
-            </dl>
-        </div>
         <!-- /flashnews -->
 
         <!-- /picnews -->
@@ -298,6 +249,30 @@
             [/@NodeList]
         </div>
         <!-- /listbox -->
+
+
+
+
+
+
+        <!-- /latestnews -->
+        <div class='latestnews'>
+            <dl class="tbox" style="border:none;">
+                <dt class='light'><strong>最新文章</strong></dt>
+                <dd class='light'>
+                    <ul class="d4">
+                        <!--最新文档-->
+                        [@InfoList limit=10 isHidden=false;list]
+                        [#list list as info]
+                        <li><span> ${info.publishDate?string('MM-dd')}</span><a href="${info.url}" target="_blank">${substring(info.title,15,'...')}</a>
+                        </li>
+                        [/#list]
+                        [/@InfoList]
+                        <!--//最新文档-->
+                    </ul>
+                </dd>
+            </dl>
+        </div>
     </div>
     <!--左边部分-->
     <!-- /pleft -->
