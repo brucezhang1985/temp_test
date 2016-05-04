@@ -88,11 +88,28 @@
 .index .notice{
 	width:349px;
 	/*border:1px solid #DADADA;*/
-	height:280px;
-	margin-bottom:8px;
+	height:365px;
+	/*margin-bottom:8px;*/
 	margin-left:10px;
 	overflow:hidden;
 	float:left;
+}
+.navLink{
+	margin-top:10px;
+	width: 360px;
+}
+.navLink ul li{
+	background: rgba(0, 0, 0, 0) url("images/bg-blue.jpg") repeat-x scroll 0 0;
+	border-bottom: 1px solid #dadada;
+	float: left;
+	height: 27px;
+	margin-bottom: 8px;
+	margin-right: 10px;
+	overflow: hidden;
+	padding-left: 50px;
+	padding-top: 8px;
+	width: 120px;
+	font-size:14px;
 }
 .index .latestnews{
 	width:280px;

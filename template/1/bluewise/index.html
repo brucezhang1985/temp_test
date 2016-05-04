@@ -128,6 +128,23 @@
             </dd>
         </dl>
 
+        <div class="navLink">
+            <ul>
+                [@NodeList isHidden=false ;list]
+                [#list list as node]
+
+                [#if node.number! == 'introduce' || node.number! == 'edu' || node.number! == 'communication' || node.number! == 'courses']
+
+                <li><strong><a href="${node.url}">[@A bean=node target="_blank"/]</a></strong></li>
+
+                [/#if]
+                [/#list]
+                [/@NodeList]
+
+            </ul>
+        </div>
+
+
     </div>
 </div>
 
@@ -227,8 +244,12 @@
         <div class="listbox">
             [@NodeList isHidden=false ;list]
             [#list list as node]
+
+            title _-> [ ${node.number}]
             [#if node.number! != 'picture' && node.number! != 'download' && node.number! != 'guestbook' && node.number!
             != 'bbs']
+
+
             <dl class="tbox">
                 <dt><strong>[@A bean=node target="_blank"/]</strong><span class="more"><a href="${node.url}"><img
                         src="_files/images/more.gif"></a></span></dt>
