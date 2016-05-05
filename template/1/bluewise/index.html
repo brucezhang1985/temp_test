@@ -244,7 +244,7 @@
             [@NodeList isHidden=false ;list]
             [#list list as node]
 
-            title _-> [ ${node.number}]
+            ${node.number},
             [#if node.number! != 'picture' && node.number! != 'download' && node.number! != 'guestbook' && node.number!
             != 'bbs' && node.number! != 'introduce' && node.number! != 'edu' && node.number! != 'communication' && node.number! != 'courses' ]
 
@@ -266,6 +266,14 @@
             </dl>
             [/#if]
             [/#list]
+            [/@NodeList]
+
+
+            [@NodeList isHidden=false ;list]
+            [#list list as node]
+
+            ${node.number},
+
             [/@NodeList]
         </div>
         <!-- /listbox -->
