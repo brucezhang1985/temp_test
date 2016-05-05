@@ -182,7 +182,7 @@
     </div>
 
     <!-- /vote -->
-    <div class="hot">
+    <div class="vote">
         <dl class="tbox light">
             <dd style="border-top:1px #dadada solid;">
                 [@Vote;vote]
@@ -337,9 +337,9 @@
         <div class="commend mt1">
             <dl class="tbox light">
                 <dt class='light'><strong>推荐内容</strong></dt>
-                <dd class='light'>
+                <dd class='light' style="height:265px;">
                     <ul class="c1">
-                        [@InfoList attr='recommend' limit=10;list]
+                        [@InfoList attr='recommend' limit=8;list]
                         [#list list as info]
                         <li class='dotline'
                             style="background:url(_files/images/icon/${info_index+1}.gif) 2px 9px no-repeat;">
