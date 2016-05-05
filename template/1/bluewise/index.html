@@ -68,7 +68,6 @@
         [/@InfoList]
         <!--//推荐文档-->
 
-
         <div class="bignews">
             <div class="flashnews">
                 <div id='slideshowHolder'>
@@ -247,7 +246,7 @@
 
             title _-> [ ${node.number}]
             [#if node.number! != 'picture' && node.number! != 'download' && node.number! != 'guestbook' && node.number!
-            != 'bbs']
+            != 'bbs' && node.number! != 'introduce' && node.number! != 'edu' && node.number! != 'communication' && node.number! != 'courses' ]
 
 
             <dl class="tbox">
