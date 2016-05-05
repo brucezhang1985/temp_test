@@ -715,6 +715,7 @@ li.dotline {
 	height:26px;
 	line-height:26px;
 	padding-left:20px;
+	margin-left: 8px;
 }
 .c_page{
 	text-align:right;
