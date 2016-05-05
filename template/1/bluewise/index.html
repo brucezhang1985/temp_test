@@ -83,7 +83,7 @@
             <div class="onenews" style="float:right;">
                 [@InfoList attr='bignews' limit=1;list]
                 [#list list as info]
-                <h2><a href="${info.url}">${info.title}</a></h2>
+                <h2><a href="${info.url}">${substring(info.title,20,'...')}</a></h2>
                 <p style="height:48px;font-size:12pt">${substring(info.description,35,'...')}<a href="${info.url}">[查看全文]</a>
                 </p>
                 [/#list]
