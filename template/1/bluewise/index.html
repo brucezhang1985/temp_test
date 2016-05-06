@@ -43,7 +43,35 @@
             font-weight: bold;
             line-height: 40px;
         }
+<style>
+	.swiper-container {
+        width: 500px;
+        max-width: 100%;
+        height: 300px;
+        max-height: 100%;
+        margin: 20px auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
 
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+</style>
     </style>
 </head>
 <body class="index">
@@ -66,19 +94,17 @@
 
         <div class="bignews">
             <div class="flashnews">
-              <div id='slideshowHolder'>
 			   	 <div class="swiper-container">
 					<div class="swiper-wrapper">
 			      [@InfoList attr='focus';list]
 			      [#list list as info]
-			        <div class="swiper-slide"><img src='${info.attrImageUrl}' alt='${info.title}' /><a href ='${info.url}' target="_blank"></a></div>
+			        <div class="swiper-slide"><a href ='${info.url}' target="_blank"><img src='${info.attrImageUrl}' alt='${info.title}' /></a></div>
 			      [/#list]
 			      [/@InfoList]
 			      	</div>
 			      	<div class="swiper-pagination"></div>
 	      		</div>
    			 </div>
-            </div>
             <!--头条-->
             <div class="onenews" style="float:right;">
                 [@InfoList attr='bignews' limit=1;list]
