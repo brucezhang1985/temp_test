@@ -9,21 +9,17 @@
     <meta name="keywords" content="广元阳光舞校"/>
     <link href="_files/jspxcms.css" rel="stylesheet" type="text/css"/>
     <script language="javascript" type="text/javascript" src="${fore}/jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="_files//swiper-3.3.1.jquery.min.js" ></script>
     <script language="javascript" type="text/javascript" src="_files/jqFancyTransitions.min.js"></script>
     <script language="javascript" type="text/javascript" src="_files/pic_scroll.js"></script>
     <script language="javascript" type="text/javascript" src="_files/YLMarquee.js"></script>
     <script language="javascript" type="text/javascript" src="_files/common.js"></script>
     <!--<script language="javascript" type="text/javascript" src="_files/litenav.js"></script>-->
     <script language="javascript" type="text/javascript">
-        $(document).ready(function () {
-            $('#slideshowHolder').jqFancyTransitions({
-                width: 424,
-                height: 290,
-                links: true,
-                delay: 3000,
-                effect: 'wave'
-            });
-        });
+	    var swiper = new Swiper('.swiper-container', {
+	        pagination: '.swiper-pagination',
+	        paginationClickable: true
+	    });
     </script>
 
 
@@ -70,14 +66,18 @@
 
         <div class="bignews">
             <div class="flashnews">
-                <div id='slideshowHolder'>
-                    [@InfoList attr='focus';list]
-                    [#list list as info]
-                    <img src='${info.attrImageUrl}' alt='${info.title}'/>
-                    <a href='${info.url}' target="_blank"></a>
-                    [/#list]
-                    [/@InfoList]
-                </div>
+              <div id='slideshowHolder'>
+			   	 <div class="swiper-container">
+					<div class="swiper-wrapper">
+			      [@InfoList attr='focus';list]
+			      [#list list as info]
+			        <div class="swiper-slide"><img src='${info.attrImageUrl}' alt='${info.title}' /><a href ='${info.url}' target="_blank"></a></div>
+			      [/#list]
+			      [/@InfoList]
+			      	</div>
+			      	<div class="swiper-pagination"></div>
+	      		</div>
+   			 </div>
             </div>
             <!--头条-->
             <div class="onenews" style="float:right;">
