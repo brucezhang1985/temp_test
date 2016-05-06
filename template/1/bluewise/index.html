@@ -15,15 +15,6 @@
     <script language="javascript" type="text/javascript" src="_files/YLMarquee.js"></script>
     <script language="javascript" type="text/javascript" src="_files/common.js"></script>
     <!--<script language="javascript" type="text/javascript" src="_files/litenav.js"></script>-->
-    <script language="javascript" type="text/javascript">
-    	var swiper = new Swiper('.swiper-container', {
-	        pagination: '.swiper-pagination',
-	        autoplay : 3000,
-	        speed:300,
-	        paginationClickable: true
-        });
-    </script>
-
 
     <style>
         div {
@@ -454,6 +445,17 @@
 
     <!-- /flink -->
     [#include "inc_footer.html"/]
+    <script src="dist/js/swiper.min.js"></script>
+	<!-- Initialize Swiper -->
+    <script>
+    		var swiper = new Swiper('.swiper-container', {
+		        pagination: '.swiper-pagination',
+                                    autoplay : 3000,
+                                    speed:300,
+		        paginationClickable: true
+		    });
+            
+    </script>
 </body>
 </html>
 [/#escape]
