@@ -39,7 +39,7 @@
         }
 
 	.swiper-container {
-        width: 500px;
+        width: 400px;
         max-width: 100%;
         height: 300px;
         max-height: 100%;
@@ -85,7 +85,7 @@
         [/@InfoList]
         <!--//推荐文档-->
 
-        <div class="bignews">
+        <div class="bignews" style = 'height:300px;'>
             <div class="flashnews">
 			   	 <div class="swiper-container">
 					<div class="swiper-wrapper">
@@ -443,19 +443,17 @@
         </dl>
 	    </div>
 	<script>
-    		var swiper = new Swiper('.swiper-container', {
-		        pagination: '.swiper-pagination',
-                                    autoplay : 3000,
-                                    speed:300,
-		        paginationClickable: true
-		    });
+ 		var swiper = new Swiper('.swiper-container', {
+	       pagination: '.swiper-pagination',
+	                                 autoplay : 3000,
+	                                 speed:300,
+	       paginationClickable: true
+		});
             
     </script>
 
     <!-- /flink -->
     [#include "inc_footer.html"/]
-    <script src="dist/js/swiper.min.js"></script>
-	<!-- Initialize Swiper -->
     
 </body>
 </html>
