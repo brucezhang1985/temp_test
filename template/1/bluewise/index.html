@@ -264,7 +264,7 @@
             [#list list as node]
 
             [#if node.number! != 'picture' && node.number! != 'download' && node.number! != 'guestbook' && node.number!
-            != 'bbs' && node.number! != 'introduce' && node.number! != 'edu' && node.number! != 'communication' && node.number! != 'courses' ]
+            != 'bbs' && node.number! != 'introduce' && node.number! != 'edu' && node.number! != 'communication' && node.number! != 'courses' && node.number! !='students']
 
 
             <dl class="tbox">
@@ -371,47 +371,50 @@
             </dl>
         </div>
         <!-- /commend -->
-        <div class="hot" style="margin-top:8px;">
-            <dl class="tbox light">
-                <dt class="light"><strong>热点专题</strong></dt>
-                <dd class="light">
-                    [@SpecialList limit=1;list]
-                    [#list list as special]
-                    <a href="${ctx}/special/${special.id}.jspx" target="_blank" class="pic"><img
-                            src="${special.smallImageUrl!}" alt="" height="70" width="95"></a>
-                    <h3><a href="${ctx}/special/${special.id}.jspx" target="_blank">${special.title}</a></h3>
-                    <p>${special.description}<a href="#" target="_blank">[详细]</a></p>
-                    [/#list]
-                    [/@SpecialList]
-                    <ul class="d2 ico2 clr">
-                        [@SpecialList offset=1 limit=5;list]
-                        [#list list as special]
-                        <li><span></span><a href="${ctx}/special/${special.id}.jspx"
-                                            target="_blank">${special.title}</a></li>
-                        [/#list]
-                        [/@SpecialList]
-                    </ul>
-                </dd>
-            </dl>
-        </div>
+        <!--<div class="hot" style="margin-top:8px;">-->
+            <!--<dl class="tbox light">-->
+                <!--<dt class="light"><strong>热点专题</strong></dt>-->
+                <!--<dd class="light">-->
+                    <!--[@SpecialList limit=1;list]-->
+                    <!--[#list list as special]-->
+                    <!--<a href="${ctx}/special/${special.id}.jspx" target="_blank" class="pic"><img-->
+                            <!--src="${special.smallImageUrl!}" alt="" height="70" width="95"></a>-->
+                    <!--<h3><a href="${ctx}/special/${special.id}.jspx" target="_blank">${special.title}</a></h3>-->
+                    <!--<p>${special.description}<a href="#" target="_blank">[详细]</a></p>-->
+                    <!--[/#list]-->
+                    <!--[/@SpecialList]-->
+                    <!--<ul class="d2 ico2 clr">-->
+                        <!--[@SpecialList offset=1 limit=5;list]-->
+                        <!--[#list list as special]-->
+                        <!--<li><span></span><a href="${ctx}/special/${special.id}.jspx"-->
+                                            <!--target="_blank">${special.title}</a></li>-->
+                        <!--[/#list]-->
+                        <!--[/@SpecialList]-->
+                    <!--</ul>-->
+                <!--</dd>-->
+            <!--</dl>-->
+        <!--</div>-->
 
-        <div class="commend" style="margin-top:10px;">
-            <dl class="tbox light">
-                <dt class='light'><strong>TOP10</strong></dt>
-                <dd class='light'>
-                    <ul class="c1">
-                        [@InfoList sort='diggs desc' limit=10;list]
-                        [#list list as info]
-                        <li class='dotline'
-                            style="background:url(_files/images/icon/${info_index+1}.gif) 2px 9px no-repeat;">
-                            <a href="${info.url}" target="_blank">${substring(info.title,17,'...')}</a>
-                        </li>
-                        [/#list]
-                        [/@InfoList]
-                    </ul>
-                </dd>
-            </dl>
-        </div>
+        <!--最新文章-->
+        <!--<div class="commend" style="margin-top:10px;">-->
+            <!--<dl class="tbox light">-->
+                <!--<dt class='light'><strong>TOP10</strong></dt>-->
+                <!--<dd class='light'>-->
+                    <!--<ul class="c1">-->
+                        <!--[@InfoList sort='diggs desc' limit=10;list]-->
+                        <!--[#list list as info]-->
+                        <!--<li class='dotline'-->
+                            <!--style="background:url(_files/images/icon/${info_index+1}.gif) 2px 9px no-repeat;">-->
+                            <!--<a href="${info.url}" target="_blank">${substring(info.title,17,'...')}</a>-->
+                        <!--</li>-->
+                        <!--[/#list]-->
+                        <!--[/@InfoList]-->
+                    <!--</ul>-->
+                <!--</dd>-->
+            <!--</dl>-->
+        <!--</div>-->
+        <!--/最新文章-->
+
 
         <!-- /pleft -->
     </div>
