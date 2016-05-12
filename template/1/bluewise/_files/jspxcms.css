@@ -1013,7 +1013,7 @@ hr.Line1 {
 .textinfo .text {
     text-align: justify;
     text-justify: destribute-all-lines;
-    text-align-last: justify;
+    /*text-align-last: justify;*/
     text-indent: 2em;
     line-height: 28px;
     font-size: 14px;
